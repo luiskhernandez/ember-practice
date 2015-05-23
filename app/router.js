@@ -8,4 +8,7 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.route('index', { path: "/"});
   this.route('modal-dialogs');
+  this.route('leandro', function(){
+    this.route('edit');
+  });
 });

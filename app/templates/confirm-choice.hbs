@@ -1,1 +1,36 @@
-template confirm
+<div class="modal__content">
+  <h1 class="modal__title">Send Private Message</h1>
+  <div class="modal__body push--bottom">
+    <div class="form-field">
+      <label class="label">Type names and separate with a space</label>
+      <select class="js-input-tags selectized" multiple="multiple" tabindex="-1" style="display: none;"></select><div class="selectize-control js-input-tags multi plugin-remove_button"><div class="selectize-input items not-full has-options"><input type="text" autocomplete="off" tabindex="" style="width: 4px;"></div><div class="selectize-dropdown multi js-input-tags plugin-remove_button" style="display: none;"><div class="selectize-dropdown-content"></div></div></div>
+    </div>
+    <div class="form-field">
+      <input class="input--text" placeholder="Type your message title here..." type="text">
+    </div>
+    <div class="form-field">
+      <textarea class="input--text" name="" placeholder="Type your message here..." rows="5"></textarea>
+    </div>
+    <ul class="list--icon-text">
+      <li>
+        <a href="">
+          <i class="icon icon-photo"></i>
+          <span class="link--color">Add Photo</span>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="icon icon-photo"></i>
+          <span class="link--color">Add File</span>
+        </a>
+      </li>
+    </ul>
+    <div class="separator"></div>
+  </div>
+  <div class="modal__footer grid"><div class="grid__item palm--one-half one-whole">
+      <a class="btn btn--default btn--full" data-dismiss="modal" data-target="#gopro-modal" data-toggle="modal" href="javascript:;">Send</a>
+    </div><div class="grid__item palm--one-half one-whole">
+      {{#em-modal-toggler class="btn btn-default"}}Cancel{{/em-modal-toggler}}
+    </div>
+  </div>
+</div>
