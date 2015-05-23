@@ -1,3 +1,20 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
-{{outlet}}
+<h2 id="title">Welcome to Ember Practice</h2>
+<div class="container">
+  <ul class="nav nav-pills">
+      {{#link-to "index" tagName="li"}}
+      <a href="#">
+        Index
+      </a>
+      {{/link-to}}
+      {{#link-to "modal-dialogs" tagName="li"}}
+      <a href="#">
+        Modal-dialogs
+      </a>
+      {{/link-to}}
+  </ul>
+  <hr>
+  <div class="row">
+    {{outlet}}
+  </div>
+</div>
+{{outlet 'modal' }}
